@@ -16,11 +16,11 @@ class NavigationBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              _NavBarItem('Episodes'),
+              _navBarItem('Episodes'),
               SizedBox(
                 width: 30,
               ),
-              _NavBarItem('About'),
+              _navBarItem('About'),
               SizedBox(
                 width: 30,
               ),
@@ -31,7 +31,7 @@ class NavigationBar extends StatelessWidget {
     );
   }
 
-  Container _NavBarItem(String title) {
+  Container _navBarItem(String title) {
     return Container(
       child: Text(
         title,
